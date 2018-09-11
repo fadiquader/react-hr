@@ -10,6 +10,30 @@ const routerConfig = {
         component: require('../routes/EmployeesUnit/PersonalInfo').default,
         key: 'PersonalInfo',
       },
+      {
+        path: '/app/employees/qualifications',
+        exact: true,
+        component: require('../routes/EmployeesUnit/Qualifications').default,
+        key: 'qualifications',
+      },
+      {
+        path: '/app/employees/employment-info',
+        exact: true,
+        component: require('../routes/EmployeesUnit/EmploymentInfo').default,
+        key: 'EmploymentInfo',
+      },
+      {
+        path: '/app/employees/experiences',
+        exact: true,
+        component: require('../routes/EmployeesUnit/Experiences').default,
+        key: 'Experiences',
+      },
+      {
+        path: '/app/employees/fin',
+        exact: true,
+        component: require('../routes/EmployeesUnit/Financial').default,
+        key: 'Financial',
+      },
     ],
   },
   '/': {

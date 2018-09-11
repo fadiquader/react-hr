@@ -52,22 +52,22 @@ class Private extends React.Component {
                   <Link to="/app/employees/personal-info">البيانات الشخصية</Link>
                 </Menu.Item>
                 <Menu.Item key="6">
-                  <Link to="/">
+                  <Link to="/app/employees/qualifications">
                     المؤهلات
                   </Link>
                 </Menu.Item>
                 <Menu.Item key="7">
-                  <Link to="/">
+                  <Link to="/app/employees/employment-info">
                     البيانات الوظيفية
                   </Link>
                 </Menu.Item>
                 <Menu.Item key="8">
-                  <Link to="/">
+                  <Link to="/app/employees/experiences">
                     الخبرات العملية والعلمية
                   </Link>
                 </Menu.Item>
                 <Menu.Item key="9">
-                  <Link to="/">
+                  <Link to="'/app/employees/fin">
                     البيانات المالية
                   </Link>
                 </Menu.Item>

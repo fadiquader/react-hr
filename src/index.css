@@ -144,3 +144,10 @@ body > div {
 .form-ctrls button:first-of-type {
   margin-left: 16px;
 }
+.ant-select-dropdown-menu {
+  list-style: none;
+  padding: 0;
+}
+.ant-form-item-label label {
+  white-space: pre-line;
+}
