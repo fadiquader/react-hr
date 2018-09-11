@@ -67,38 +67,38 @@ class Private extends React.Component {
                   </Link>
                 </Menu.Item>
                 <Menu.Item key="9">
-                  <Link to="'/app/employees/fin">
+                  <Link to="/app/employees/fin">
                     البيانات المالية
                   </Link>
                 </Menu.Item>
                 <Menu.Item key="10">
-                  <Link to="/">
+                  <Link to="/app/employees/members">
                     العضويات واللجان
                   </Link>
                   </Menu.Item>
                 <Menu.Item key="11">
-                  <Link to="/">
+                  <Link to="/app/employees/nadb">
                     الندب
                   </Link>
                 </Menu.Item>
                 <Menu.Item key="12">
-                  <Link to="/">
+                  <Link to="/app/employees/movement">
                     النقل
                   </Link>
                 </Menu.Item>
                 <Menu.Item key="14">
-                  <Link to="/">
+                  <Link to="/app/employees/punishment">
                     الجزاءات والمساءلة
                   </Link>
                 </Menu.Item>
                 <Menu.Item key="15">
-                  <Link to="/">
+                  <Link to="/app/employees/achievment">
                     الترقيات
                   </Link>
                 </Menu.Item>
                 <Menu.Item key="16">
-                  <Link to="/">
-                    المكافئات والعلاوات
+                  <Link to="/app/employees/loaning">
+                    الإعــــارة
                   </Link>
                 </Menu.Item>
               </SubMenu>

@@ -34,6 +34,42 @@ const routerConfig = {
         component: require('../routes/EmployeesUnit/Financial').default,
         key: 'Financial',
       },
+      {
+        path: '/app/employees/members',
+        exact: true,
+        component: require('../routes/EmployeesUnit/Members').default,
+        key: 'Members',
+      },
+      {
+        path: '/app/employees/nadb',
+        exact: true,
+        component: require('../routes/EmployeesUnit/Nadb').default,
+        key: 'Nadb',
+      },
+      {
+        path: '/app/employees/movement',
+        exact: true,
+        component: require('../routes/EmployeesUnit/Movement').default,
+        key: 'Movement',
+      },
+      {
+        path: '/app/employees/punishment',
+        exact: true,
+        component: require('../routes/EmployeesUnit/Punishment').default,
+        key: 'Punishment',
+      },
+      {
+        path: '/app/employees/achievment',
+        exact: true,
+        component: require('../routes/EmployeesUnit/Achievment').default,
+        key: 'Achievment',
+      },
+      {
+        path: '/app/employees/loaning',
+        exact: true,
+        component: require('../routes/EmployeesUnit/Loaning').default,
+        key: 'Loaning',
+      },
     ],
   },
   '/': {
