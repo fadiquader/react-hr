@@ -1,0 +1,29 @@
+
+.p-title {
+  color: #6e6eff;
+  font-size: 30px;
+  font-weight: bold;
+  /*padding: 30px 64px;*/
+}
+.back-btn {
+  padding: 0 64px;
+  font-size: 18px;
+  padding-top: 30px;
+}
+.back-btn i {
+  margin-left: 8px;
+}
+.card-padding {
+  padding: 0 64px;
+}
+.progress .ant-progress-circle .ant-progress-text {
+  font-size: 20px;
+}
+.wm-label {
+  color: #1a5d92;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 50px;
+  margin-bottom: 8px;
+
+}

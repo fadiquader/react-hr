@@ -1,0 +1,32 @@
+
+.wm-title {
+  color: #1a5d92;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 30px 64px;
+  padding-bottom: 0;
+  /*border-bottom: 1px solid #efefef;*/
+
+}
+
+.wm-table {
+  margin-top: 32px;
+}
+.wm-table .ant-table-thead > tr > th {
+  background-color: transparent;
+  font-size: 15px;
+  color: #6e6eff;
+}
+
+.reports-title {
+  color: #1a5d92;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 30px 43px;
+}
+.reports {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 30px 43px;
+}

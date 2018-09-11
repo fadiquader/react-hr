@@ -48,57 +48,74 @@ class Private extends React.Component {
                 </Link>
               </Menu.Item>
               <SubMenu key="sub2" title={<span><Icon type="contacts" theme="outlined" /><span>وحدة الموظفين</span></span>}>
-                <Menu.Item key="5">
-                  <Link to="/app/employees/personal-info">البيانات الشخصية</Link>
-                </Menu.Item>
-                <Menu.Item key="6">
-                  <Link to="/app/employees/qualifications">
-                    المؤهلات
+              <Menu.Item key="5">
+                <Link to="/app/employees/personal-info">البيانات الشخصية</Link>
+              </Menu.Item>
+              <Menu.Item key="6">
+                <Link to="/app/employees/qualifications">
+                  المؤهلات
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="7">
+                <Link to="/app/employees/employment-info">
+                  البيانات الوظيفية
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="8">
+                <Link to="/app/employees/experiences">
+                  الخبرات العملية والعلمية
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="9">
+                <Link to="/app/employees/fin">
+                  البيانات المالية
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="10">
+                <Link to="/app/employees/members">
+                  العضويات واللجان
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="11">
+                <Link to="/app/employees/nadb">
+                  الندب
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="12">
+                <Link to="/app/employees/movement">
+                  النقل
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="14">
+                <Link to="/app/employees/punishment">
+                  الجزاءات والمساءلة
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="15">
+                <Link to="/app/employees/achievment">
+                  الترقيات
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="16">
+                <Link to="/app/employees/loaning">
+                  الإعــــارة
+                </Link>
+              </Menu.Item>
+            </SubMenu>
+              <SubMenu
+                key="sub3"
+                title={
+                  <Link to="/app/employees/management">
+                    <span><Icon type="contacts" theme="outlined" /><span>وحدة ادارة مهام العمل</span></span>
                   </Link>
+                }
+              >
+                <Menu.Item key="p">
+                  <Link to="/app/employees/work-management">الخطة السنوية للمشاريع التقارير</Link>
                 </Menu.Item>
-                <Menu.Item key="7">
-                  <Link to="/app/employees/employment-info">
-                    البيانات الوظيفية
-                  </Link>
-                </Menu.Item>
-                <Menu.Item key="8">
-                  <Link to="/app/employees/experiences">
-                    الخبرات العملية والعلمية
-                  </Link>
-                </Menu.Item>
-                <Menu.Item key="9">
-                  <Link to="/app/employees/fin">
-                    البيانات المالية
-                  </Link>
-                </Menu.Item>
-                <Menu.Item key="10">
-                  <Link to="/app/employees/members">
-                    العضويات واللجان
-                  </Link>
-                  </Menu.Item>
-                <Menu.Item key="11">
-                  <Link to="/app/employees/nadb">
-                    الندب
-                  </Link>
-                </Menu.Item>
-                <Menu.Item key="12">
-                  <Link to="/app/employees/movement">
-                    النقل
-                  </Link>
-                </Menu.Item>
-                <Menu.Item key="14">
-                  <Link to="/app/employees/punishment">
-                    الجزاءات والمساءلة
-                  </Link>
-                </Menu.Item>
-                <Menu.Item key="15">
-                  <Link to="/app/employees/achievment">
-                    الترقيات
-                  </Link>
-                </Menu.Item>
-                <Menu.Item key="16">
-                  <Link to="/app/employees/loaning">
-                    الإعــــارة
+                <Menu.Item key="p1">
+                  <Link to="/app/employees/reports">
+                    التقارير
                   </Link>
                 </Menu.Item>
               </SubMenu>

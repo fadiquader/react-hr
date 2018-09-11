@@ -70,6 +70,31 @@ const routerConfig = {
         component: require('../routes/EmployeesUnit/Loaning').default,
         key: 'Loaning',
       },
+      {
+        path: '/app/employees/work-management/:id',
+        exact: true,
+        component: require('../routes/Mamangment/ProjectDetail').default,
+        key: 'WorkManagmentDetails',
+      },
+      {
+        path: '/app/employees/work-management',
+        exact: true,
+        component: require('../routes/Mamangment/WorkManagment').default,
+        key: 'WorkManagment',
+      },
+      {
+        path: '/app/employees/reports',
+        exact: true,
+        component: require('../routes/Mamangment/Reports').default,
+        key: 'Reports',
+      },
+      {
+        path: '/app/employees/management',
+        exact: true,
+        component: require('../routes/Mamangment/Mamagement').default,
+        key: 'Mamagement',
+      },
+
     ],
   },
   '/': {

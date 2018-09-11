@@ -123,6 +123,9 @@
   color: white;
   padding-right: 16px;
 }
+.sider .ant-menu-inline .ant-menu-submenu-title > a {
+  color: white;
+}
 .sider  .ant-menu-submenu-arrow {
   left: 16px;
   right: auto !important;
