@@ -1,0 +1,134 @@
+.sider {
+  background-image: linear-gradient(188deg, #3023ae, #53e5fd);
+}
+
+.private-page {
+  background-color: #eaeff3;
+}
+.private-page .ant-menu-root.ant-menu-vertical,
+.private-page .ant-menu-root.ant-menu-vertical-left,
+.private-page .ant-menu-root.ant-menu-vertical-right,
+.private-page  .ant-menu-root.ant-menu-inline,
+.sider .ant-menu-submenu > .ant-menu {
+  background-color: transparent;
+  border: none;
+}
+
+.ant-layout-sider {
+  background-color: transparent;
+}
+.sider  .ant-menu-inline .ant-menu-selected:after,
+.sider .ant-menu-inline .ant-menu-item-selected:after{
+  content: none;
+}
+.sider .ant-menu-item .anticon,
+.sider .ant-menu-submenu-title .anticon {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+.sider .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: white;
+
+}
+.sider .ant-menu-item > a,
+.sider .ant-menu-item > a:hover,
+.ant-menu-sub.ant-menu-inline > .ant-menu-item > a,
+.ant-menu-sub.ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title >a
+{
+  color: white;
+}
+.sider .ant-menu-item-selected > a,
+.sider .ant-menu-item-selected > a:hover {
+  color: #1a5d92;
+}
+.sider .ant-menu-sub .ant-menu-item-selected {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+.sider .ant-menu-sub .ant-menu-item-selected > a,
+.sider .ant-menu-sub .ant-menu-item-selected > a:hover {
+  color: white;
+}
+.private-page .header {
+  background-image: linear-gradient(247deg, #3023ae, #53e5fd);
+}
+.header-bg {
+  background-image: linear-gradient(247deg, #3023ae, #53e5fd);
+  min-height: 350px;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header .ant-layout-header, .header .ant-menu-dark.ant-menu-horizontal {
+  background-color: transparent;
+}
+
+.private-layout {
+  position: relative;
+}
+
+.page-content {
+  position: relative;
+  z-index: 1;
+}
+.nav {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.nav .ant-menu.ant-menu-dark .ant-menu-item-selected,
+.nav .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.user-menu-label {
+  color: white;
+  border-bottom: none;
+  font-size: 16px;
+}
+.user-menu-label:hover {
+  opacity: 0.8;
+  color: white;
+}
+.user-menu-label i {
+  font-weight: bold;
+  margin: 0 8px;
+  font-size: 16px;
+}
+
+.user-menu-label .ant-avatar.ant-avatar-icon {
+  margin-left: 16px;
+}
+
+.signout {
+
+}
+.signout i {
+  margin-left: 16px;
+  font-size: 16px !important;
+
+}
+
+.notif i {
+  font-size: 18px !important;
+  font-weight: bold;
+}
+.signout-label {
+  font-weight: bold;
+}
+.sider .ant-menu-inline .ant-menu-submenu-title {
+  color: white;
+  padding-right: 16px;
+}
+.sider  .ant-menu-submenu-arrow {
+  left: 16px;
+  right: auto !important;
+}
+.sider .ant-menu-submenu-arrow:before,
+.sider .ant-menu-submenu-arrow:after {
+  background-color: white !important;
+  background-image: none !important;
+}

@@ -1,0 +1,38 @@
+
+.login-page {
+  min-height: 100vh;
+  background-image: radial-gradient(circle at 0% 50%, #3023ae, #322db2, #53e5fd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  /*width: 80%;*/
+  min-width: 400px;
+  margin: auto;
+  padding: 32px;
+}
+.login-form .ant-row.ant-form-item {
+  margin-left: 0;
+}
+
+
+.login-form .ant-form-item-label {
+  width: 100px;
+}
+
+.login-form .ant-form-item-label label {
+  color: white;
+}
+
+.login-actions {
+  display: flex;
+}
+.login-actions .pink-btn {
+  flex: 1;
+  margin-left: 16px;
+}
+.login-actions .yellow-btn {
+  flex: .5;
+}

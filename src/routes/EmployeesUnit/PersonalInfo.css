@@ -1,0 +1,19 @@
+
+.uploader {
+  display: flex;
+  padding: 8px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: solid 1px rgba(40, 47, 54, 0.15);
+}
+
+.upload-actions {
+  /*padding-top: 60px;*/
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
