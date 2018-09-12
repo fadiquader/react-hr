@@ -12,6 +12,28 @@ const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
+const theme = require('../theme.config')();
+
+const postcssLoader = {
+  loader: require.resolve('postcss-loader'),
+  options: {
+    // Necessary for external CSS imports to work
+    // https://github.com/facebookincubator/create-react-app/issues/2677
+    ident: 'postcss',
+    plugins: () => [
+      require('postcss-flexbugs-fixes'),
+      autoprefixer({
+        browsers: [
+          '>1%',
+          'last 4 versions',
+          'Firefox ESR',
+          'not ie < 9', // React doesn't support IE8 anyway
+        ],
+        flexbox: 'no-2009',
+      }),
+    ],
+  },
+}
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // It requires a trailing slash, or the file assets will get an incorrect path.
@@ -150,7 +172,7 @@ module.exports = {
             loader: require.resolve('babel-loader'),
             options: {
               plugins: [
-                ['import', { libraryName: 'antd',  libraryDirectory: 'es', style: 'css' }],
+                ['import', { libraryName: 'antd',  libraryDirectory: 'es', style: true }],
               ],
               compact: true,
             },
@@ -213,6 +235,29 @@ module.exports = {
               )
             ),
             // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
+          },
+          {
+            test: /\.less$/,
+            include: ['node_modules', paths.appNodeModules],
+            use: ExtractTextPlugin.extract({
+              fallback: require.resolve('style-loader'),
+              use: [
+                {
+                  loader: require.resolve('css-loader'),
+                  options: {
+                    importLoaders: 2,
+                    minimize: true,
+                    sourceMap: shouldUseSourceMap
+                  }
+                },
+                postcssLoader,
+                {
+                  loader: require.resolve('less-loader'),
+                  options: {
+                    modifyVars: theme,
+                  },
+                }],
+            })
           },
           // "file" loader makes sure assets end up in the `build` folder.
           // When you `import` an asset, you get its filename.

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Form, Input, Select, Button, Row, Col } from 'antd';
 
+import logo from '../../assets/icons/Small_Top_Logo.svg';
+import loginIcon from '../../assets/icons/Login.svg';
 import './Login.css';
 
 const FormItem = Form.Item;
@@ -13,7 +15,21 @@ class Login extends React.Component {
 
     return (
       <div className="login-page">
+        <div className="login-logo">
+          <div>
+            <img src={logo} alt=""/>
+          </div>
+          <div>
+            <p>إدارة رأس</p>
+            <h3>المال البشري</h3>
+          </div>
+        </div>
         <Form className="login-form">
+          <div className="login-icon text-center">
+            <img src={loginIcon} alt=""/>
+            <h2 style={{ color: 'white', marginTop: '8px'}}>تسجيل الدخول</h2>
+          </div>
+          <br/>
           <Row type="flex" gutter={16}>
             <Col xs={24} sm={24} md={8} lg={8}>
               <div className="label">اسم المستخدم</div>

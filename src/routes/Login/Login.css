@@ -36,3 +36,18 @@
 .login-actions .yellow-btn {
   flex: .5;
 }
+.login-logo {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+.login-logo > div {
+  margin-left: 8px;
+}
+.login-logo * {
+  color: white;
+  margin-bottom: 0;
+}
