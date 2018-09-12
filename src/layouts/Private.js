@@ -2,6 +2,8 @@ import React from 'react';
 import { Link, Switch, Route } from 'react-router-dom';
 import { Layout, Menu, Icon, Dropdown, Avatar } from 'antd';
 import './Private.css'
+import logo from '../assets/icons/Small_Top_Logo.svg';
+
 const { Header, Sider } = Layout;
 
 const SubMenu = Menu.SubMenu;
@@ -26,8 +28,14 @@ class Private extends React.Component {
     return (
       <Layout className="mvh-100" hasSider>
         <div className="sider private-page">
-          <div>
-            راس المال البشري
+          <div className="side-logo">
+            <div>
+              <img src={logo} alt=""/>
+            </div>
+            <div>
+              <p>إدارة رأس</p>
+              <h3>المال البشري</h3>
+            </div>
           </div>
           <Sider
             trigger={null}
@@ -39,12 +47,6 @@ class Private extends React.Component {
                 <Link to="/dashboard/organization">
                   <Icon type="home" theme="outlined" />
                   <span>الرئيسية</span>
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="2">
-                <Link to="/dashboard/organization">
-                  <Icon type="solution" theme="outlined" />
-                  <span>وحدة التنظيم الاداري</span>
                 </Link>
               </Menu.Item>
               <SubMenu key="sub4" title={<span><Icon type="contacts" theme="outlined" /><span>وحدة الإجــــــازات</span></span>}>

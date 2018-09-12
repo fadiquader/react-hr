@@ -68,7 +68,9 @@ class Login extends React.Component {
                 <Button type="primary" size="large" className="pink-btn">
                   نسيت كلمة المرور
                 </Button>
-                <Button type="primary" size="large" className="yellow-btn">
+                <Button
+                  onClick={() => this.props.history.push('/app/employees/personal-info')}
+                  type="primary" size="large" className="yellow-btn">
                   دخـــول
                 </Button>
               </div>

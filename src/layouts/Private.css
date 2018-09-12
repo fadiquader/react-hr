@@ -135,3 +135,18 @@
   background-color: white !important;
   background-image: none !important;
 }
+.side-logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 16px;
+  background-color: #3564c5;
+}
+.side-logo img {
+  margin-left: 16px;
+}
+.side-logo * {
+  color: white;
+  margin-bottom: 0;
+  font-size: 14px;
+}
