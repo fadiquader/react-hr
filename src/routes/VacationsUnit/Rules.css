@@ -58,3 +58,9 @@
   height: 320px;
   overflow-y: scroll;
 }
+
+.alert-vacations {
+  margin: 16px 160px !important;
+  border-radius: 3px !important;
+  text-align: center;
+}

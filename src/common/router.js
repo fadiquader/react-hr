@@ -113,6 +113,12 @@ const routerConfig = {
         key: 'VacationRules',
       },
       {
+        path: '/app/vacations/add',
+        exact: true,
+        component: require('../routes/VacationsUnit/AddVacation').default,
+        key: 'AddVacation',
+      },
+      {
         path: '/app/employees/vb/subject/1',
         exact: true,
         component: require('../routes/VB/Subject').default,
