@@ -95,11 +95,23 @@ const routerConfig = {
         key: 'Mamagement',
       },
       {
+        path: '/app/employees/vb',
+        exact: true,
+        component: require('../routes/VB/ٍSubjects').default,
+        key: 'ٍSubjects',
+      },
+    {
+        path: '/app/employees/vb/add',
+        exact: true,
+        component: require('../routes/VB/AddSubject').default,
+        key: 'AddSubject',
+      },
+      {
         path: '/app/vacations/rules',
         exact: true,
         component: require('../routes/VacationsUnit/Rules').default,
         key: 'VacationRules',
-      },
+      }
     ],
   },
   '/': {

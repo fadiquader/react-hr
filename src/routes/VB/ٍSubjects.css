@@ -1,0 +1,30 @@
+
+.subjects-table {
+  margin-top: 16px;
+}
+.subjects-table .ant-table-thead > tr > th {
+  background-color: #3f76d0;
+  color: white;
+}
+.subjects-table .ant-table-tbody > tr {
+  cursor: pointer;
+}
+.user-position {
+  color: #b0b0b0;
+  font-size: 10px;
+}
+.add-form {
+  padding: 30px 64px;
+}
+.add-form .ant-select {
+  width: 100%;
+}
+.add-form .ant-form-item-control-wrapper {
+  width: 100%;
+}
+
+.help-text {
+  color: #9caabc;
+  font-size: 12px;
+}
+
