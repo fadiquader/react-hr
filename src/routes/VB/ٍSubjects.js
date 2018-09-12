@@ -114,7 +114,7 @@ class Subjects extends React.Component {
               columns={columns}
               onRow={(record) => {
                 return {
-                  onClick: () => this.props.history.push('/'),       // click row
+                  onClick: () => this.props.history.push('/app/employees/vb/subject/1'),       // click row
                 };
               }}
             />

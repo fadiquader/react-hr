@@ -119,6 +119,18 @@ const routerConfig = {
         key: 'AddVacation',
       },
       {
+        path: '/app/vacations',
+        exact: true,
+        component: require('../routes/VacationsUnit/Vacations').default,
+        key: 'Vacations',
+      },
+      {
+        path: '/app/vacations/archived',
+        exact: true,
+        component: require('../routes/VacationsUnit/PreviousVacations').default,
+        key: 'PreviousVacations',
+      },
+      {
         path: '/app/employees/vb/subject/1',
         exact: true,
         component: require('../routes/VB/Subject').default,

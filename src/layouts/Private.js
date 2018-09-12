@@ -47,6 +47,29 @@ class Private extends React.Component {
                   <span>وحدة التنظيم الاداري</span>
                 </Link>
               </Menu.Item>
+              <SubMenu key="sub4" title={<span><Icon type="contacts" theme="outlined" /><span>وحدة الإجــــــازات</span></span>}>
+                <Menu.Item key="1">
+                  <Link to="/app/vacations/rules">
+                    القوانين
+                  </Link>
+                </Menu.Item>
+                <Menu.Item key="2">
+                  <Link to="/app/vacations/archived">
+                    أرشيف الإجازات
+                  </Link>
+                </Menu.Item>
+                <Menu.Item key="3">
+                  <Link to="/app/vacations/add">
+                    طلب الإجازة
+                  </Link>
+                </Menu.Item>
+                <Menu.Item key="4">
+                  <Link to="/app/vacations">
+                    الحالة
+                  </Link>
+                </Menu.Item>
+              </SubMenu>
+
               <SubMenu key="sub2" title={<span><Icon type="contacts" theme="outlined" /><span>وحدة الموظفين</span></span>}>
               <Menu.Item key="5">
                 <Link to="/app/employees/personal-info">البيانات الشخصية</Link>
