@@ -94,7 +94,12 @@ const routerConfig = {
         component: require('../routes/Mamangment/Mamagement').default,
         key: 'Mamagement',
       },
-
+      {
+        path: '/app/vacations/rules',
+        exact: true,
+        component: require('../routes/VacationsUnit/Rules').default,
+        key: 'VacationRules',
+      },
     ],
   },
   '/': {

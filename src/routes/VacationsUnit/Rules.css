@@ -1,0 +1,60 @@
+.vacations-rules {
+  padding: 0px 20px 20px 20px;
+}
+
+.count {
+  display: block;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.vacation-rule {
+  height: 149px;
+  width: 149px;
+  border-radius: 38.4px;
+  text-align: center;
+  background-color: #52e4fd;
+  padding: 16px 0;
+}
+
+.rectangle-1 {
+  color: #fff;
+  background-color: #ff9393;
+}
+.rectangle-2 {
+  color: #fff;
+  background-color: #52e4fd;
+}
+.rectangle-3 {
+  color: #fff;
+  background-color: #6d819c;
+}
+.rectangle-4 {
+  background-color: #facf5a;
+}
+.rectangle-5 {
+  color: #fff;
+  background-color: #3f57c2;
+}
+.rectangle-6 {
+  background-color: #b8e986;
+}
+
+.rules-content-area {
+  margin: 34px 16px 16px 16px;
+}
+.rules-content-area h4 {
+  color: #1a5d92;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.rules-content-text h4 {
+  color: #1a5d92;
+  font-size: 15px;
+}
+.rules-content-text {
+  height: 320px;
+  overflow-y: scroll;
+}
