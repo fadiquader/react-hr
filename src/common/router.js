@@ -111,6 +111,12 @@ const routerConfig = {
         exact: true,
         component: require('../routes/VacationsUnit/Rules').default,
         key: 'VacationRules',
+      },
+      {
+        path: '/app/employees/vb/subject/1',
+        exact: true,
+        component: require('../routes/VB/Subject').default,
+        key: 'Subject',
       }
     ],
   },
