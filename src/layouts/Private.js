@@ -119,6 +119,12 @@ class Private extends React.Component {
                   </Link>
                 </Menu.Item>
               </SubMenu>
+              <Menu.Item key="s">
+                <Link to="/app/employees/vb">
+                  <Icon type="home" theme="outlined" />
+                  <span>المنتــدى الإلكــتــــروني</span>
+                </Link>
+              </Menu.Item>
             </Menu>
           </Sider>
         </div>

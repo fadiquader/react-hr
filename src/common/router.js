@@ -94,6 +94,18 @@ const routerConfig = {
         component: require('../routes/Mamangment/Mamagement').default,
         key: 'Mamagement',
       },
+      {
+        path: '/app/employees/vb',
+        exact: true,
+        component: require('../routes/VB/ٍSubjects').default,
+        key: 'ٍSubjects',
+      },
+    {
+        path: '/app/employees/vb/add',
+        exact: true,
+        component: require('../routes/VB/AddSubject').default,
+        key: 'AddSubject',
+      },
 
     ],
   },
