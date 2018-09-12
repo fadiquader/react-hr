@@ -48,22 +48,22 @@ class Private extends React.Component {
                 </Link>
               </Menu.Item>
               <SubMenu key="sub4" title={<span><Icon type="contacts" theme="outlined" /><span>وحدة الإجــــــازات</span></span>}>
-                <Menu.Item key="1">
+                <Menu.Item key="sd1">
                   <Link to="/app/vacations/rules">
                     القوانين
                   </Link>
                 </Menu.Item>
-                <Menu.Item key="2">
+                <Menu.Item key="2sdf">
                   <Link to="/app/vacations/archived">
                     أرشيف الإجازات
                   </Link>
                 </Menu.Item>
-                <Menu.Item key="3">
+                <Menu.Item key="fffsd">
                   <Link to="/app/vacations/add">
                     طلب الإجازة
                   </Link>
                 </Menu.Item>
-                <Menu.Item key="4">
+                <Menu.Item key="sdfdf">
                   <Link to="/app/vacations">
                     الحالة
                   </Link>
