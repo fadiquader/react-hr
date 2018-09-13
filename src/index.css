@@ -239,3 +239,14 @@ body > div {
 .card {
   overflow-x: auto;
 }
+.ant-form-item-label {
+  text-align: right !important;
+}
+@media (max-width: 768px) {
+  .page {
+    padding: 0 20px 20px 20px;
+  }
+  .card-section {
+    padding: 20px 32px;
+  }
+}

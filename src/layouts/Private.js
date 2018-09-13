@@ -12,41 +12,87 @@ const MenuItemGroup = Menu.ItemGroup;
 class Private extends React.Component {
   state = {
     collapsed: false,
+    isMobile: window.innerWidth <= 768
   };
 
+  componentDidMount() {
+    window.onresize = e => {
+      const { isMobile } = this.state;
+      let newSize = window.innerWidth <= 768;
+      if(isMobile === newSize) return;
+      this.setState({
+        isMobile: newSize,
+      })
+    }
+  }
+
+  toggle = () => {
+    this.setState(prev => ({
+        collapsed: !prev.collapsed,
+      }
+    ))
+  }
+
+  onClick = () => {
+    console.log('onClick')
+    const { isMobile } = this.state;
+    if(isMobile) {
+      this.setState({
+        collapsed: false,
+      })
+    }
+  }
+
   render() {
-    const { collapsed } = this.state;
+    const { collapsed, isMobile } = this.state;
     const menu = (
       <Menu
       >
-
         <Menu.Item key="3">
           تيست
         </Menu.Item>
       </Menu>
     );
+    let toggleCls  = '';
+    if((!isMobile && collapsed)) {
+      toggleCls = 'toggled-des'
+    } if (isMobile && !collapsed) {
+      toggleCls = 'toggled-des-mobile'
+    }
     return (
       <Layout className="mvh-100" hasSider>
-        <div className="sider private-page">
+        <div className={`toggle-btn ${toggleCls}`}>
+          <Icon
+            type={collapsed ? 'menu-unfold' : 'menu-fold'}
+            onClick={this.toggle}
+          />
+        </div>
+        <div className={`sider private-page ${isMobile ? `sider-mobile ${collapsed ? 'sider-mobile-opened' : ''}` : ''}`}>
           <div className="side-logo">
             <div>
               <img src={logo} alt=""/>
             </div>
-            <div>
-              <p>إدارة رأس</p>
-              <h3>المال البشري</h3>
-            </div>
+            {
+              !collapsed &&
+              <div>
+                <p>إدارة رأس</p>
+                <h3>المال البشري</h3>
+              </div>
+            }
+
           </div>
           <Sider
             trigger={null}
             collapsible
-            collapsed={collapsed}
-            breakpoint="lg"
-            collapsedWidth="0"
+            collapsed={isMobile ? false: collapsed}
+            // breakpoint="md"
+            collapsedWidth={isMobile ? 0 : 80}
             width={225}
+
+            // style={{ width: collapsed ? !isMobile ? 80 : 0 : 225 }}
             // onBreakpoint={(broken) => this.setState({ collapsed: true })}
           >
-            <Menu mode="inline">
+            <Menu onClick={this.onClick} mode="inline">
               <Menu.Item key="1">
                 <Link to="/dashboard/organization">
                   <Icon type="home" theme="outlined" />
