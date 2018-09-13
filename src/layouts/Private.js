@@ -41,6 +41,9 @@ class Private extends React.Component {
             trigger={null}
             collapsible
             collapsed={collapsed}
+            breakpoint="lg"
+            collapsedWidth="0"
+            // onBreakpoint={(broken) => this.setState({ collapsed: true })}
           >
             <Menu mode="inline" defaultSelectedKeys={['1']}>
               <Menu.Item key="1">

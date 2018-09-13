@@ -150,3 +150,12 @@
   margin-bottom: 0;
   font-size: 14px;
 }
+
+@media (max-width: 768px) {
+  .sider {
+    display: none;
+  }
+  .header-bg {
+    min-height: 400px;
+  }
+}
