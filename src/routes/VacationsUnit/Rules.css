@@ -61,7 +61,8 @@
 }
 
 .alert-vacations {
-  margin: 16px 160px !important;
+  max-width: 500px !important;
   border-radius: 3px !important;
   text-align: center;
+  margin: auto !important;
 }

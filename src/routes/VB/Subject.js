@@ -45,15 +45,16 @@ class Subject extends React.Component {
             </h1>
             <span className="subject-date">04/16/2018</span>
           </div>
+          <br/>
           <Row type="flex" gutter={16} justify="space-around">
             <Col xs={4} sm={4} md={8} lg={8} className="subject-image-box">
-              <img src="https://support.content.office.net/en-us/media/c1633a4d-a445-4f6c-87fc-f41fc8f01b69.jpg" width={300} hight={200}/>
+              <img className="img-responsive" src="https://support.content.office.net/en-us/media/c1633a4d-a445-4f6c-87fc-f41fc8f01b69.jpg" width={300} hight={200}/>
             </Col>
             <Col xs={4} sm={4} md={8} lg={8} className="subject-image-box">
-              <img src="https://www.yasamsigorta.net/wp-content/uploads/2018/04/office_365_business.jpg" width={300} hight={200}/>
+              <img className="img-responsive" src="https://www.yasamsigorta.net/wp-content/uploads/2018/04/office_365_business.jpg" width={300} hight={200}/>
             </Col>
             <Col xs={4} sm={4} md={8} lg={8} className="subject-image-box">
-              <img src="https://www.yasamsigorta.net/wp-content/uploads/2018/04/office_365_business.jpg" width={300} hight={200}/>
+              <img className="img-responsive" src="https://www.yasamsigorta.net/wp-content/uploads/2018/04/office_365_business.jpg" width={300} hight={200}/>
             </Col>
             <Col xs={24} sm={24} md={24} lg={24} className="subject-content-area">
               <p>
