@@ -134,7 +134,7 @@ class Vacations extends React.Component {
             </h1>
           </div>
           <div className="vacations-rules">
-            <Row type="flex" justify="space-around" >
+            <Row type="flex" justify="space-around" gutter={32}>
               <Col span={4} order={1} className="vacation-rule rectangle-1">
                 <span className="count">38</span>
                 رصيد الإجازت

@@ -96,6 +96,14 @@ class PersonalInfo extends React.Component {
                     <Col xs={24} sm={24} md={24} lg={24}>
                       <FormItem
                         {...formItemLayout}
+                        labelCol={{
+                          xs: { span: 24 },
+                          sm: { span: 4 },
+                        }}
+                        wrapperCol={{
+                          xs: { span: 24 },
+                          sm: { span: 20 },
+                        }}
                         label="القبيلة"
                       >
                         {getFieldDecorator('email')(

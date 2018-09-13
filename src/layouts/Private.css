@@ -1,5 +1,6 @@
 .sider {
   background-image: linear-gradient(188deg, #3023ae, #53e5fd);
+  /*width: 300px;*/
 }
 
 .private-page {
@@ -37,13 +38,14 @@
 .ant-menu-sub.ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title >a
 {
   color: white;
+  font-size: 12px;
 }
 .sider .ant-menu-item-selected > a,
 .sider .ant-menu-item-selected > a:hover {
   color: #1a5d92;
 }
 .sider .ant-menu-sub .ant-menu-item-selected {
-  background-color: rgba(255, 255, 255, 0.3) !important;
+  background-color: rgba(0, 0, 0, 0.05) !important;
 }
 .sider .ant-menu-sub .ant-menu-item-selected > a,
 .sider .ant-menu-sub .ant-menu-item-selected > a:hover {
@@ -125,6 +127,7 @@
 }
 .sider .ant-menu-inline .ant-menu-submenu-title > a {
   color: white;
+
 }
 .sider  .ant-menu-submenu-arrow {
   left: 16px;
@@ -150,7 +153,9 @@
   margin-bottom: 0;
   font-size: 14px;
 }
-
+.sider .ant-menu-inline .ant-menu-submenu-title {
+  font-size: 12px !important;
+}
 @media (max-width: 768px) {
   .sider {
     display: none;

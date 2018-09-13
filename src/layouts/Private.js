@@ -43,9 +43,10 @@ class Private extends React.Component {
             collapsed={collapsed}
             breakpoint="lg"
             collapsedWidth="0"
+            width={225}
             // onBreakpoint={(broken) => this.setState({ collapsed: true })}
           >
-            <Menu mode="inline" defaultSelectedKeys={['1']}>
+            <Menu mode="inline">
               <Menu.Item key="1">
                 <Link to="/dashboard/organization">
                   <Icon type="home" theme="outlined" />

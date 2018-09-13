@@ -49,10 +49,13 @@ body > div {
   border-color: #e7bf53;
 }
 .dark-btn {
-  background-color: rgba(41, 132, 185, 0.5);
+  background-color: rgba(41, 132, 185, 0.3);
   color: white;
-  border-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
   margin-bottom: 8px;
+  font-size: 13px;
+
 }
 .dark-btn:hover, .dark-btn:active, .dark-btn:focus{
   background-color: rgba(41, 132, 185, 0.2);
@@ -215,4 +218,24 @@ body > div {
 }
 .text-center {
   text-align: center;
+}
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+  text-align: center;
+}
+.ant-menu-sub.ant-menu-inline .ant-menu-item {
+  padding-right: 32px;
+}
+.ant-menu-submenu-open > .ant-menu-submenu-title {
+  background-color: white;
+  color: #1a5d92 !important;
+}
+.ant-menu-submenu-open > .ant-menu-submenu-title a {
+  color: #1a5d92 !important;
+}
+.ant-menu-submenu-open > .ant-menu-submenu-title .ant-menu-submenu-arrow:before,
+.ant-menu-submenu-open > .ant-menu-submenu-title .ant-menu-submenu-arrow:after {
+  background-color: #1a5d92 !important;
+}
+.card {
+  overflow-x: auto;
 }
