@@ -16,7 +16,6 @@ const RangePicker = DatePicker.RangePicker;
 class PersonalInfo extends React.Component {
 
   render() {
-    const { getFieldDecorator } = this.props.form;
     const formItemLayout = {
       labelCol: {
         xs: { span: 24 },
@@ -58,9 +57,7 @@ class PersonalInfo extends React.Component {
                         {...formItemLayout}
                         label="الاسم الاول"
                       >
-                        {getFieldDecorator('email')(
-                          <Input />
-                        )}
+                        <Input />
                       </FormItem>
                     </Col>
                     <Col xs={24} sm={24} md={12} lg={12}>
@@ -68,9 +65,7 @@ class PersonalInfo extends React.Component {
                         {...formItemLayout}
                         label="الاسم الثاني"
                       >
-                        {getFieldDecorator('email')(
-                          <Input />
-                        )}
+                        <Input />
                       </FormItem>
                     </Col>
                     <Col xs={24} sm={24} md={12} lg={12}>
@@ -78,9 +73,7 @@ class PersonalInfo extends React.Component {
                         {...formItemLayout}
                         label="الاسم الثالث"
                       >
-                        {getFieldDecorator('email')(
-                          <Input />
-                        )}
+                        <Input />
                       </FormItem>
                     </Col>
                     <Col xs={24} sm={24} md={12} lg={12}>
@@ -88,9 +81,7 @@ class PersonalInfo extends React.Component {
                         {...formItemLayout}
                         label="الاسم الرابع"
                       >
-                        {getFieldDecorator('email')(
-                          <Input />
-                        )}
+                        <Input />
                       </FormItem>
                     </Col>
                     <Col xs={24} sm={24} md={24} lg={24}>
@@ -106,9 +97,7 @@ class PersonalInfo extends React.Component {
                         }}
                         label="القبيلة"
                       >
-                        {getFieldDecorator('email')(
-                          <Input />
-                        )}
+                        <Input />
                       </FormItem>
                     </Col>
                   </Row>
@@ -141,9 +130,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="الرقم المدني"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -151,9 +138,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="تاريخ الانتهاء"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -161,21 +146,16 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="الجنس"
                   >
-                    {getFieldDecorator('select')(
-                      <Select placeholder="الجنس">
-                        <Option value="china">ذكر</Option>
-                      </Select>
-                    )}
+                    <Select placeholder="الجنس">
+                      <Option value="china">ذكر</Option>
+                    </Select>
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
                   <FormItem
                     {...formItemLayout}
                     label="رقم القوى العاملة"
-                  >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                  > <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -183,9 +163,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="الجنسية"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -193,9 +171,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="جنسية اخرى"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
               </Row>
@@ -207,9 +183,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="رقم جواز السفر"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
 
@@ -218,9 +192,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="مكان الاصدار"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
 
@@ -229,9 +201,8 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="تاريخ الانتهاء"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
+
                   </FormItem>
                 </Col>
               </Row>
@@ -243,9 +214,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="الرقم المدنى"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={16} lg={16}>
@@ -260,9 +229,7 @@ class PersonalInfo extends React.Component {
                     }}
                     label="العنوان"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -270,9 +237,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="شهادة المكان"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -280,9 +245,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="ميلاد المكان"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -290,9 +253,8 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="تاريخ الميلاد"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
+
                   </FormItem>
                 </Col>
               </Row>
@@ -304,9 +266,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="الملف الصحي"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -314,9 +274,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="فصيلة الدم"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -324,9 +282,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="الحالة الاجتماعية"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -334,9 +290,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="اللغات"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -344,9 +298,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="الهوايات"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
               </Row>
@@ -360,9 +312,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="الاسم الاول"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -370,9 +320,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="الاسم الثاني"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -380,9 +328,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="الاسم الثالث"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -390,9 +336,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="الرقم المدني"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -400,9 +344,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="الجنسية"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -410,9 +352,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="الديانة"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -420,9 +360,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="المهنة"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -430,9 +368,7 @@ class PersonalInfo extends React.Component {
                     {...formItemLayout}
                     label="جهة العمل"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
               </Row>

@@ -51,9 +51,7 @@ class Movement extends React.Component {
                     {...formItemLayout}
                     label="الجهة"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -61,9 +59,7 @@ class Movement extends React.Component {
                     {...formItemLayout}
                     label="الوظيفة"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -71,9 +67,7 @@ class Movement extends React.Component {
                     {...formItemLayout}
                     label="تاريخ النقل"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -81,9 +75,7 @@ class Movement extends React.Component {
                     {...formItemLayout}
                     label="المسمى  بالجهة المنقول اليها"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -91,9 +83,7 @@ class Movement extends React.Component {
                     {...formItemLayout}
                     label="الدرجة المالية"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -101,11 +91,9 @@ class Movement extends React.Component {
                     {...formItemLayout}
                     label="نوع النقل"
                   >
-                    {getFieldDecorator('select')(
-                      <Select>
-                        <Option value="china">...</Option>
-                      </Select>
-                    )}
+                    <Select>
+                      <Option value="china">...</Option>
+                    </Select>
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -113,13 +101,11 @@ class Movement extends React.Component {
                     {...formItemLayout}
                     label="مرفقات"
                   >
-                    {getFieldDecorator('select')(
-                      <Upload>
-                        <Button>
-                          <Icon type="upload" />
-                        </Button>
-                      </Upload>
-                    )}
+                    <Upload>
+                      <Button>
+                        <Icon type="upload" />
+                      </Button>
+                    </Upload>
                   </FormItem>
                 </Col>
               </Row>

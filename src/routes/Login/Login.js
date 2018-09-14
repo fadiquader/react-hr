@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Input, Select, Button, Row, Col } from 'antd';
+import { Form, Input, Checkbox, Button, Row, Col } from 'antd';
 
 import logo from '../../assets/icons/Small_Top_Logo.svg';
 import loginIcon from '../../assets/icons/Login.svg';
@@ -11,8 +11,6 @@ const FormItem = Form.Item;
 class Login extends React.Component {
 
   render() {
-    const { getFieldDecorator } = this.props.form;
-
     return (
       <div className="login-page">
         <div className="login-logo">
@@ -35,13 +33,7 @@ class Login extends React.Component {
               <div className="label">اسم المستخدم</div>
             </Col>
             <Col xs={24} sm={24} md={16} lg={16}>
-              {
-                getFieldDecorator('email', {
-
-                })(
-                  <Input size="large" />
-                )}
-
+              <Input size="large" />
             </Col>
           </Row>
           <br/>
@@ -50,12 +42,7 @@ class Login extends React.Component {
               <div className="label">كلمة المرور</div>
             </Col>
             <Col xs={24} sm={24} md={16} lg={16}>
-              {
-                getFieldDecorator('email', {
-
-                })(
-                  <Input size="large" />
-                )}
+              <Input size="large" />
 
             </Col>
           </Row>
@@ -64,15 +51,20 @@ class Login extends React.Component {
             <Col xs={24} sm={24} md={8} lg={8}>
             </Col>
             <Col xs={24} sm={24} md={16} lg={16}>
-              <div className="login-actions">
-                <Button type="primary" size="large" className="pink-btn">
-                  نسيت كلمة المرور
-                </Button>
-                <Button
-                  onClick={() => this.props.history.push('/app/employees/personal-info')}
-                  type="primary" size="large" className="yellow-btn">
-                  دخـــول
-                </Button>
+              <div className="login-ctrls">
+                <div className="remember-pass">
+                  <Checkbox>تذكر كلمة المرور في المرات القادمة</Checkbox>
+                </div>
+                <div className="login-actions">
+                  <Button type="primary" size="large" className="pink-btn">
+                    نسيت كلمة المرور
+                  </Button>
+                  <Button
+                    onClick={() => this.props.history.push('/app/employees/personal-info')}
+                    type="primary" size="large" className="yellow-btn">
+                    دخـــول
+                  </Button>
+                </div>
               </div>
             </Col>
           </Row>

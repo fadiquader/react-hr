@@ -16,7 +16,6 @@ const RangePicker = DatePicker.RangePicker;
 class EmploymentInfo extends React.Component {
 
   render() {
-    const { getFieldDecorator } = this.props.form;
     const formItemLayout = {
       labelCol: {
         xs: { span: 24 },
@@ -56,9 +55,7 @@ class EmploymentInfo extends React.Component {
                     {...formItemLayout}
                     label="المسمى الوظيفي"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -66,9 +63,7 @@ class EmploymentInfo extends React.Component {
                     {...formItemLayout}
                     label="تاريخ شغل الوظيفة"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -76,9 +71,7 @@ class EmploymentInfo extends React.Component {
                     {...formItemLayout}
                     label="الرقم الوظيفي"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -86,9 +79,7 @@ class EmploymentInfo extends React.Component {
                     {...formItemLayout}
                     label="الدرجة المالية"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -96,9 +87,7 @@ class EmploymentInfo extends React.Component {
                     {...formItemLayout}
                     label="المديرية/ المكتب"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -106,9 +95,7 @@ class EmploymentInfo extends React.Component {
                     {...formItemLayout}
                     label="الدائرة"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -116,11 +103,9 @@ class EmploymentInfo extends React.Component {
                     {...formItemLayout}
                     label="القسم"
                   >
-                    {getFieldDecorator('select')(
-                      <Select placeholder="الجنس">
-                        <Option value="china">ذكر</Option>
-                      </Select>
-                    )}
+                    <Select placeholder="الجنس">
+                      <Option value="china">ذكر</Option>
+                    </Select>
                   </FormItem>
                 </Col>
               </Row>

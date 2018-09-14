@@ -229,8 +229,11 @@ body > div {
   background-color: white;
   color: #1a5d92 !important;
 }
-.ant-menu-submenu-open > .ant-menu-submenu-title a {
+.ant-menu-submenu-open > .ant-menu-submenu-title a{
   color: #1a5d92 !important;
+}
+.ant-menu-submenu-open > .ant-menu-submenu-title .side-icon g {
+  fill: #1a5d92 !important;
 }
 .ant-menu-submenu-open > .ant-menu-submenu-title .ant-menu-submenu-arrow:before,
 .ant-menu-submenu-open > .ant-menu-submenu-title .ant-menu-submenu-arrow:after {
@@ -241,6 +244,22 @@ body > div {
 }
 .ant-form-item-label {
   text-align: right !important;
+}
+.ant-menu-inline-collapsed > .ant-menu-item .side-icon + span,
+.ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item .side-icon + span,
+.ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-submenu > .ant-menu-submenu-title .side-icon + span,
+.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title .side-icon + span {
+  max-width: 0!important;
+  display: inline-block;
+  opacity: 0 !important;
+}
+.sider .ant-menu-item .side-icon, .sider .ant-menu-submenu-title .side-icon {
+  margin-right: 0;
+  margin-left: 16px;
+  vertical-align: middle;
+}
+.ant-tooltip .side-icon {
+  display: none;
 }
 @media (max-width: 768px) {
   .page {

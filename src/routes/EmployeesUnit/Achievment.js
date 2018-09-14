@@ -16,7 +16,6 @@ const RangePicker = DatePicker.RangePicker;
 class Achievment extends React.Component {
 
   render() {
-    const { getFieldDecorator } = this.props.form;
     const formItemLayout = {
       labelCol: {
         xs: { span: 24 },
@@ -51,9 +50,7 @@ class Achievment extends React.Component {
                     {...formItemLayout}
                     label="نوع الترقية"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -61,9 +58,7 @@ class Achievment extends React.Component {
                     {...formItemLayout}
                     label="المسمى الوظيفي"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
 
@@ -72,19 +67,15 @@ class Achievment extends React.Component {
                     {...formItemLayout}
                     label="تاريخ الترقية"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
+
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
                   <FormItem
                     {...formItemLayout}
                     label="الدرجة الماليةة"
-                  >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                  ><Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -92,13 +83,11 @@ class Achievment extends React.Component {
                     {...formItemLayout}
                     label="مرفقات"
                   >
-                    {getFieldDecorator('select')(
-                      <Upload>
-                        <Button>
-                          <Icon type="upload" />
-                        </Button>
-                      </Upload>
-                    )}
+                    <Upload>
+                      <Button>
+                        <Icon type="upload" />
+                      </Button>
+                    </Upload>
                   </FormItem>
                 </Col>
               </Row>
@@ -110,9 +99,7 @@ class Achievment extends React.Component {
                     {...formItemLayout}
                     label="المسمى الوظيفي ماقبل الترقيــة"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -120,9 +107,7 @@ class Achievment extends React.Component {
                     {...formItemLayout}
                     label="المسمى الوظيفي للوظيفة المقترحة"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
 
@@ -131,9 +116,7 @@ class Achievment extends React.Component {
                     {...formItemLayout}
                     label="تاريخ شغل الدرجة الجديدة"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -141,9 +124,7 @@ class Achievment extends React.Component {
                     {...formItemLayout}
                     label="تفاصيل الراتب  للدرجة الجديدة"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
               </Row>

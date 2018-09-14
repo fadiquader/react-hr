@@ -16,7 +16,6 @@ const RangePicker = DatePicker.RangePicker;
 class Financial extends React.Component {
 
   render() {
-    const { getFieldDecorator } = this.props.form;
     const formItemLayout = {
       labelCol: {
         xs: { span: 24 },
@@ -61,9 +60,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="الدرجة المالية"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -71,9 +68,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="الراتب الأساسي"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -81,9 +76,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="علاوة النقل"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -91,9 +84,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="علاوة السكن"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -101,9 +92,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="علاوة الماء"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -111,9 +100,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="علاوة الهاتف"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -121,9 +108,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="علاوة الكهرباء"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -131,9 +116,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="علاوات اضافية"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -141,9 +124,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="إجمالي العلاوات"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -151,9 +132,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="إجمالي الراتب"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -161,9 +140,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="العلاوة الدورية"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -171,9 +148,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="العلاوة الدورية"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -181,9 +156,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="تاريخ آخر علاوة"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -191,9 +164,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="العلاوات الاستثنائية"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
               </Row>
@@ -208,9 +179,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="رقم حساب"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -218,9 +187,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="اسم البنك"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -228,9 +195,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="الفرع"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
               </Row>
@@ -242,9 +207,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="الاستقطاعات"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -252,9 +215,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="الراتب بعد الاستقطاع"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -262,9 +223,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="تفاصيل الاستحقاق"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -272,9 +231,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="التفاصيل المالية للدرجة"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -282,9 +239,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="بدلات السفر للموظف"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <Input  />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -292,9 +247,7 @@ class Financial extends React.Component {
                     {...formItemLayout}
                     label="تذكرة الطيران"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <Input  />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
               </Row>

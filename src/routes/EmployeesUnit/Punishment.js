@@ -51,9 +51,7 @@ class Punishment extends React.Component {
                     {...formItemLayout}
                     label="نوع المخالفة"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -61,9 +59,7 @@ class Punishment extends React.Component {
                     {...formItemLayout}
                     label="تاريخ الاحالة"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -71,9 +67,7 @@ class Punishment extends React.Component {
                     {...formItemLayout}
                     label="قرارات الاحالة"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -81,9 +75,7 @@ class Punishment extends React.Component {
                     {...formItemLayout}
                     label="سبب الإحالة"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -91,9 +83,7 @@ class Punishment extends React.Component {
                     {...formItemLayout}
                     label="نوع العقوبة"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -101,9 +91,7 @@ class Punishment extends React.Component {
                     {...formItemLayout}
                     label="تاريخ توقيع العقوبة"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -111,9 +99,7 @@ class Punishment extends React.Component {
                     {...formItemLayout}
                     label="من الفترة"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -121,9 +107,7 @@ class Punishment extends React.Component {
                     {...formItemLayout}
                     label="الى الفترة"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -131,13 +115,11 @@ class Punishment extends React.Component {
                     {...formItemLayout}
                     label="مرفقات"
                   >
-                    {getFieldDecorator('select')(
-                      <Upload>
-                        <Button>
-                          <Icon type="upload" />
-                        </Button>
-                      </Upload>
-                    )}
+                    <Upload>
+                      <Button>
+                        <Icon type="upload" />
+                      </Button>
+                    </Upload>
                   </FormItem>
                 </Col>
               </Row>

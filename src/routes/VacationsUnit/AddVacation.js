@@ -17,7 +17,6 @@ const RangePicker = DatePicker.RangePicker;
 class AddVacation extends React.Component {
 
   render() {
-    const { getFieldDecorator } = this.props.form;
     const formItemLayout = {
       labelCol: {
         xs: { span: 24 },
@@ -120,9 +119,7 @@ class AddVacation extends React.Component {
                           {...formItemLayout}
                           label="من الفترة"
                         >
-                          {getFieldDecorator('date-time-picker')(
-                            <DatePicker showTime format="YYYY-MM-DD" />
-                          )}
+                          <DatePicker showTime format="YYYY-MM-DD" />
                         </FormItem>
                       </Col>
                       <Col xs={24} sm={24} md={8} lg={8}>
@@ -130,9 +127,7 @@ class AddVacation extends React.Component {
                           {...formItemLayout}
                           label="إلى الفترة"
                         >
-                          {getFieldDecorator('date-time-picker')(
-                            <DatePicker showTime format="YYYY-MM-DD" />
-                          )}
+                          <DatePicker showTime format="YYYY-MM-DD" />}
                         </FormItem>
                       </Col>
                       <Col xs={24} sm={24} md={8} lg={8}>
@@ -140,9 +135,7 @@ class AddVacation extends React.Component {
                           {...formItemLayout}
                           label="الموظف البديل"
                         >
-                          {getFieldDecorator('alternative_employee')(
-                            <Input />
-                          )}
+                          <Input />
                         </FormItem>
                       </Col>
                       <Col xs={24} sm={24} md={8} lg={8}>
@@ -150,13 +143,11 @@ class AddVacation extends React.Component {
                           {...formItemLayout}
                           label="مرفقات"
                         >
-                          {getFieldDecorator('select')(
-                            <Upload>
-                              <Button>
-                                <Icon type="upload" />
-                              </Button>
-                            </Upload>
-                          )}
+                          <Upload>
+                            <Button>
+                              <Icon type="upload" />
+                            </Button>
+                          </Upload>
                         </FormItem>
                       </Col>
                     </Row>

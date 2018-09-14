@@ -56,9 +56,7 @@ class Loaning extends React.Component {
                     {...formItemLayout}
                     label="اسم الجهة المعار اليها"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -66,9 +64,7 @@ class Loaning extends React.Component {
                     {...formItemLayout}
                     label="الوظيفة"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -76,9 +72,8 @@ class Loaning extends React.Component {
                     {...formItemLayout}
                     label="تاريخ البدء"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
+
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -86,9 +81,8 @@ class Loaning extends React.Component {
                     {...formItemLayout}
                     label="تاريخ الانتهاء"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
+
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -96,9 +90,8 @@ class Loaning extends React.Component {
                     {...formItemLayout}
                     label="تاريخ اخلاء طرف الموظف"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
+
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -106,19 +99,14 @@ class Loaning extends React.Component {
                     {...formItemLayout}
                     label="الفترة"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
                   <FormItem
                     {...formItemLayout}
                     label="التمديد"
-                  >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                  ><Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -126,9 +114,7 @@ class Loaning extends React.Component {
                     {...formItemLayout}
                     label="تقييم الاداء"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -136,13 +122,11 @@ class Loaning extends React.Component {
                     {...formItemLayout}
                     label="مرفقات"
                   >
-                    {getFieldDecorator('select')(
-                      <Upload>
-                        <Button>
-                          <Icon type="upload" />
-                        </Button>
-                      </Upload>
-                    )}
+                    <Upload>
+                      <Button>
+                        <Icon type="upload" />
+                      </Button>
+                    </Upload>
                   </FormItem>
                 </Col>
               </Row>

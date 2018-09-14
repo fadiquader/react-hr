@@ -51,7 +51,16 @@
   color: white;
   margin-bottom: 0;
 }
-
+.remember-pass {
+  margin-bottom: 64px;
+}
+.remember-pass .ant-checkbox-wrapper{
+  color: white;
+}
+.login-ctrls {
+  padding-right: 4px;
+  padding-left: 4px;
+}
 @media (max-width: 768px) {
   .login-form {
     min-width: auto;

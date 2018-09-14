@@ -16,7 +16,6 @@ const RangePicker = DatePicker.RangePicker;
 class Qualifications extends React.Component {
 
   render() {
-    const { getFieldDecorator } = this.props.form;
     const formItemLayout = {
       labelCol: {
         xs: { span: 24 },
@@ -56,9 +55,7 @@ class Qualifications extends React.Component {
                     {...formItemLayout}
                     label="المؤهل العلمي"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={12} lg={8}>
@@ -66,9 +63,7 @@ class Qualifications extends React.Component {
                     {...formItemLayout}
                     label="التخصص"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={12} lg={8}>
@@ -76,9 +71,7 @@ class Qualifications extends React.Component {
                     {...formItemLayout}
                     label="الجهة المانحة"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={12} lg={8}>
@@ -86,9 +79,7 @@ class Qualifications extends React.Component {
                     {...formItemLayout}
                     label="البلد"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -96,9 +87,8 @@ class Qualifications extends React.Component {
                     {...formItemLayout}
                     label="من الفترة"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
+
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -106,9 +96,8 @@ class Qualifications extends React.Component {
                     {...formItemLayout}
                     label="الى الفترة"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
+
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -116,11 +105,9 @@ class Qualifications extends React.Component {
                     {...formItemLayout}
                     label="نوع الدراسة"
                   >
-                    {getFieldDecorator('select')(
-                      <Select placeholder="الجنس">
-                        <Option value="china">ذكر</Option>
-                      </Select>
-                    )}
+                    <Select placeholder="الجنس">
+                      <Option value="china">ذكر</Option>
+                    </Select>
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -128,11 +115,9 @@ class Qualifications extends React.Component {
                     {...formItemLayout}
                     label="المعدل التراكمي"
                   >
-                    {getFieldDecorator('select')(
-                      <Select>
-                        <Option value="china">ذكر</Option>
-                      </Select>
-                    )}
+                    <Select>
+                      <Option value="china">ذكر</Option>
+                    </Select>
                   </FormItem>
                 </Col>
               </Row>

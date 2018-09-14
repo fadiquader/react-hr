@@ -16,7 +16,6 @@ const RangePicker = DatePicker.RangePicker;
 class Nadb extends React.Component {
 
   render() {
-    const { getFieldDecorator } = this.props.form;
     const formItemLayout = {
       labelCol: {
         xs: { span: 24 },
@@ -56,9 +55,7 @@ class Nadb extends React.Component {
                     {...formItemLayout}
                     label="نوع الندب"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -66,11 +63,9 @@ class Nadb extends React.Component {
                     {...formItemLayout}
                     label="توقيت الندب"
                   >
-                    {getFieldDecorator('select')(
-                      <Select>
-                        <Option value="china">اثناء ساعات العمل الرسمي</Option>
-                      </Select>
-                    )}
+                    <Select>
+                      <Option value="china">اثناء ساعات العمل الرسمي</Option>
+                    </Select>
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -78,9 +73,7 @@ class Nadb extends React.Component {
                     {...formItemLayout}
                     label="الجهة المنتدب اليها"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -88,11 +81,9 @@ class Nadb extends React.Component {
                     {...formItemLayout}
                     label="الوظيفة"
                   >
-                    {getFieldDecorator('select')(
-                      <Select>
-                        <Option value="china">اثناء ساعات العمل الرسمي</Option>
-                      </Select>
-                    )}
+                    <Select>
+                      <Option value="china">اثناء ساعات العمل الرسمي</Option>
+                    </Select>
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -100,9 +91,7 @@ class Nadb extends React.Component {
                     {...formItemLayout}
                     label="من الفترة"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -110,9 +99,7 @@ class Nadb extends React.Component {
                     {...formItemLayout}
                     label="الى الفترة"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -120,9 +107,7 @@ class Nadb extends React.Component {
                     {...formItemLayout}
                     label="تاريخ الاخلاء"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -130,9 +115,7 @@ class Nadb extends React.Component {
                     {...formItemLayout}
                     label="الفترة"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker disabled showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker disabled showTime format="YYYY-MM-DD" />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -140,9 +123,7 @@ class Nadb extends React.Component {
                     {...formItemLayout}
                     label="التمديد"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -150,9 +131,7 @@ class Nadb extends React.Component {
                     {...formItemLayout}
                     label="التمديد"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -160,9 +139,7 @@ class Nadb extends React.Component {
                     {...formItemLayout}
                     label="تقييم الاداء"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -170,13 +147,11 @@ class Nadb extends React.Component {
                     {...formItemLayout}
                     label="مرفقات"
                   >
-                    {getFieldDecorator('select')(
-                      <Upload>
-                        <Button>
-                          <Icon type="upload" />
-                        </Button>
-                      </Upload>
-                    )}
+                    <Upload>
+                      <Button>
+                        <Icon type="upload" />
+                      </Button>
+                    </Upload>
                   </FormItem>
                 </Col>
               </Row>

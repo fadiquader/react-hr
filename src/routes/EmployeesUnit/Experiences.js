@@ -16,7 +16,6 @@ const RangePicker = DatePicker.RangePicker;
 class Experiences extends React.Component {
 
   render() {
-    const { getFieldDecorator } = this.props.form;
     const formItemLayout = {
       labelCol: {
         xs: { span: 24 },
@@ -56,11 +55,9 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="القطاع"
                   >
-                    {getFieldDecorator('select')(
-                      <Select>
-                        <Option value="china">قطاع عام</Option>
-                      </Select>
-                    )}
+                    <Select>
+                      <Option value="china">قطاع عام</Option>
+                    </Select>
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -68,13 +65,11 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="مرفقات"
                   >
-                    {getFieldDecorator('select')(
-                      <Upload>
-                        <Button>
-                          <Icon type="upload" />
-                        </Button>
-                      </Upload>
-                    )}
+                    <Upload>
+                      <Button>
+                        <Icon type="upload" />
+                      </Button>
+                    </Upload>
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -82,9 +77,7 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="البلد"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -92,9 +85,7 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="المسمى الوظيفي"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -102,9 +93,7 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="اسم جهة العمل"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -112,9 +101,7 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="الراتب"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -122,9 +109,8 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="من الفترة"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
+
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -132,9 +118,8 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="الى الفترة"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
+
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -142,9 +127,7 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="الفترة"
                   >
-                    {getFieldDecorator('email')(
-                      <Input disabled />
-                    )}
+                    <Input disabled />
                   </FormItem>
                 </Col>
               </Row>
@@ -156,11 +139,9 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="القطاع"
                   >
-                    {getFieldDecorator('select')(
-                      <Select>
-                        <Option value="china">قطاع عام</Option>
-                      </Select>
-                    )}
+                    <Select>
+                      <Option value="china">قطاع عام</Option>
+                    </Select>
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -168,13 +149,11 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="مرفقات"
                   >
-                    {getFieldDecorator('select')(
-                      <Upload>
-                        <Button>
-                          <Icon type="upload" />
-                        </Button>
-                      </Upload>
-                    )}
+                    <Upload>
+                      <Button>
+                        <Icon type="upload" />
+                      </Button>
+                    </Upload>
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -182,9 +161,7 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="البلد"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -192,9 +169,7 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="المسمى الوظيفي"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -202,9 +177,7 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="اسم جهة العمل"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -212,9 +185,7 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="الراتب"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -222,9 +193,8 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="من الفترة"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
+
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -232,9 +202,7 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="الى الفترة"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -242,9 +210,7 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="الفترة"
                   >
-                    {getFieldDecorator('email')(
-                      <Input disabled />
-                    )}
+                    <Input disabled />
                   </FormItem>
                 </Col>
               </Row>
@@ -257,9 +223,7 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="اسم البرنامج"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -267,9 +231,7 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="اسم جهة التدريب"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -277,9 +239,7 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="المكان"
                   >
-                    {getFieldDecorator('email')(
-                      <Input />
-                    )}
+                    <Input />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -287,9 +247,7 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="من الفترة"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -297,9 +255,7 @@ class Experiences extends React.Component {
                     {...formItemLayout}
                     label="الى الفترة"
                   >
-                    {getFieldDecorator('date-time-picker')(
-                      <DatePicker showTime format="YYYY-MM-DD" />
-                    )}
+                    <DatePicker showTime format="YYYY-MM-DD" />
                   </FormItem>
                 </Col>
               </Row>
