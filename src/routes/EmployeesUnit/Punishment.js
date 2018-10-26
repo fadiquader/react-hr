@@ -97,22 +97,6 @@ class Punishment extends React.Component {
                 <Col xs={24} sm={24} md={8} lg={8}>
                   <FormItem
                     {...formItemLayout}
-                    label="من الفترة"
-                  >
-                    <DatePicker showTime format="YYYY-MM-DD" />
-                  </FormItem>
-                </Col>
-                <Col xs={24} sm={24} md={8} lg={8}>
-                  <FormItem
-                    {...formItemLayout}
-                    label="الى الفترة"
-                  >
-                    <DatePicker showTime format="YYYY-MM-DD" />
-                  </FormItem>
-                </Col>
-                <Col xs={24} sm={24} md={8} lg={8}>
-                  <FormItem
-                    {...formItemLayout}
                     label="مرفقات"
                   >
                     <Upload>

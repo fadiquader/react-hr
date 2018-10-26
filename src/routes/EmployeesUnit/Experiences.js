@@ -130,6 +130,14 @@ class Experiences extends React.Component {
                     <Input disabled />
                   </FormItem>
                 </Col>
+                <Col xs={24} sm={24} md={24} lg={24}>
+                  <FormItem
+                    {...formItemLayout}
+                    label="سبب ترك الخدمة"
+                  >
+                    <Input />
+                  </FormItem>
+                </Col>
               </Row>
             </div>
             <div className="card-section">
@@ -211,6 +219,14 @@ class Experiences extends React.Component {
                     label="الفترة"
                   >
                     <Input disabled />
+                  </FormItem>
+                </Col>
+                <Col xs={24} sm={24} md={24} lg={24}>
+                  <FormItem
+                    {...formItemLayout}
+                    label="سبب ترك الخدمة"
+                  >
+                    <Input />
                   </FormItem>
                 </Col>
               </Row>

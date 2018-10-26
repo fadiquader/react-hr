@@ -129,14 +129,6 @@ class Nadb extends React.Component {
                 <Col xs={24} sm={24} md={8} lg={8}>
                   <FormItem
                     {...formItemLayout}
-                    label="التمديد"
-                  >
-                    <Input />
-                  </FormItem>
-                </Col>
-                <Col xs={24} sm={24} md={8} lg={8}>
-                  <FormItem
-                    {...formItemLayout}
                     label="تقييم الاداء"
                   >
                     <Input />

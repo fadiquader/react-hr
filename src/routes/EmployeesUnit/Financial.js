@@ -146,14 +146,6 @@ class Financial extends React.Component {
                 <Col xs={24} sm={24} md={8} lg={8}>
                   <FormItem
                     {...formItemLayout}
-                    label="العلاوة الدورية"
-                  >
-                    <Input />
-                  </FormItem>
-                </Col>
-                <Col xs={24} sm={24} md={8} lg={8}>
-                  <FormItem
-                    {...formItemLayout}
                     label="تاريخ آخر علاوة"
                   >
                     <DatePicker showTime format="YYYY-MM-DD" />
@@ -245,7 +237,7 @@ class Financial extends React.Component {
                 <Col xs={24} sm={24} md={8} lg={8}>
                   <FormItem
                     {...formItemLayout}
-                    label="تذكرة الطيران"
+                    label="فئة تذكرة الطيران المستحقة للموظف"
                   >
                     <Input />
                   </FormItem>

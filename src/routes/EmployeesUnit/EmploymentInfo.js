@@ -53,7 +53,7 @@ class EmploymentInfo extends React.Component {
                 <Col xs={24} sm={24} md={8} lg={8}>
                   <FormItem
                     {...formItemLayout}
-                    label="المسمى الوظيفي"
+                    label="المسمى الوظيفي الحالي"
                   >
                     <Input />
                   </FormItem>
@@ -61,7 +61,7 @@ class EmploymentInfo extends React.Component {
                 <Col xs={24} sm={24} md={8} lg={8}>
                   <FormItem
                     {...formItemLayout}
-                    label="تاريخ شغل الوظيفة"
+                    label="تاريخ شغل الوظيفة الحالي"
                   >
                     <Input />
                   </FormItem>
@@ -72,6 +72,35 @@ class EmploymentInfo extends React.Component {
                     label="الرقم الوظيفي"
                   >
                     <Input />
+                  </FormItem>
+                </Col>
+                <Col xs={24} sm={24} md={8} lg={8}>
+                  <FormItem
+                    {...formItemLayout}
+                    label="تاريخ التعيين"
+                  >
+                    <DatePicker showTime format="YYYY-MM-DD" />
+
+                  </FormItem>
+                </Col>
+                <Col xs={24} sm={24} md={8} lg={8}>
+                  <FormItem
+                    {...formItemLayout}
+                    label="تاريخ شغل الدرجة"
+                  >
+                    <DatePicker showTime format="YYYY-MM-DD" />
+
+                  </FormItem>
+                </Col>
+                <Col xs={24} sm={24} md={8} lg={8}>
+                  <FormItem
+                    {...formItemLayout}
+                    label="آالية شغل الوظيفة"
+                  >
+                    <Select placeholder="اختار">
+                      <Option value="china">عقد</Option>
+                      <Option value="chinثa">دائم</Option>
+                    </Select>
                   </FormItem>
                 </Col>
                 <Col xs={24} sm={24} md={8} lg={8}>
@@ -103,8 +132,8 @@ class EmploymentInfo extends React.Component {
                     {...formItemLayout}
                     label="القسم"
                   >
-                    <Select placeholder="الجنس">
-                      <Option value="china">ذكر</Option>
+                    <Select placeholder="اختار">
+                      <Option value="china">...</Option>
                     </Select>
                   </FormItem>
                 </Col>

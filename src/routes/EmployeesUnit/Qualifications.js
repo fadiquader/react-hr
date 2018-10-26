@@ -37,11 +37,6 @@ class Qualifications extends React.Component {
                   اضافة مؤهل علمي
                 </Button>
               </li>
-              <li>
-                <Button type="primary" size="large" className="dark-btn">
-                  طلب اجازة
-                </Button>
-              </li>
             </ul>
           </div>
         </div>
@@ -50,6 +45,14 @@ class Qualifications extends React.Component {
             <div className="card-section">
               <p className="content-title">المؤهلات</p>
               <Row type="flex" gutter={16}>
+                <Col xs={24} sm={24} md={12} lg={8}>
+                  <FormItem
+                    {...formItemLayout}
+                    label="اسم المؤهل العلمي"
+                  >
+                    <Input />
+                  </FormItem>
+                </Col>
                 <Col xs={24} sm={24} md={12} lg={8}>
                   <FormItem
                     {...formItemLayout}
@@ -105,8 +108,8 @@ class Qualifications extends React.Component {
                     {...formItemLayout}
                     label="نوع الدراسة"
                   >
-                    <Select placeholder="الجنس">
-                      <Option value="china">ذكر</Option>
+                    <Select placeholder="اختار">
+                      <Option value="china">...</Option>
                     </Select>
                   </FormItem>
                 </Col>
@@ -115,9 +118,7 @@ class Qualifications extends React.Component {
                     {...formItemLayout}
                     label="المعدل التراكمي"
                   >
-                    <Select>
-                      <Option value="china">ذكر</Option>
-                    </Select>
+                    <Input />
                   </FormItem>
                 </Col>
               </Row>

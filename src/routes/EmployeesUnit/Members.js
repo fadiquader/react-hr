@@ -49,93 +49,159 @@ class Members extends React.Component {
           <Form>
             <div className="card-section">
               <p className="content-title">العضويات واللجان</p>
-              <Row type="flex" gutter={16}>
-                <Col xs={24} sm={24} md={8} lg={8}>
-                  <FormItem
-                    {...formItemLayout}
-                    label="اسم الجهة المنظمة"
-                  >
-                    <Input />
-                  </FormItem>
-                </Col>
-                <Col xs={24} sm={24} md={8} lg={8}>
-                  <FormItem
-                    {...formItemLayout}
-                    label="المجال"
-                  >
-                    <Input />
-                  </FormItem>
-                </Col>
-                <Col xs={24} sm={24} md={8} lg={8}>
-                  <FormItem
-                    {...formItemLayout}
-                    label="المسمى"
-                  >
-                    <Input />
-                  </FormItem>
-                </Col>
-                <Col xs={24} sm={24} md={8} lg={8}>
-                  <FormItem
-                    {...formItemLayout}
-                    label="البلد"
-                  >
-                    <Input />
-                  </FormItem>
-                </Col>
-                <Col xs={24} sm={24} md={8} lg={8}>
-                  <FormItem
-                    {...formItemLayout}
-                    label="من الفترة"
-                  >
-                    <DatePicker showTime format="YYYY-MM-DD" />
-                  </FormItem>
-                </Col>
-                <Col xs={24} sm={24} md={8} lg={8}>
-                  <FormItem
-                    {...formItemLayout}
-                    label="الى الفترة"
-                  >
-                    <DatePicker showTime format="YYYY-MM-DD" />
-                  </FormItem>
-                </Col>
-                <Col xs={24} sm={24} md={8} lg={8}>
-                  <FormItem
-                    {...formItemLayout}
-                    label="مرفقات"
-                  >
-                    <Upload>
-                      <Button>
-                        <Icon type="upload" />
-                      </Button>
-                    </Upload>
-                  </FormItem>
-                </Col>
-                <Col xs={24} sm={24} md={8} lg={8}>
-                  <FormItem
-                    {...formItemLayout}
-                    label="اللجان الداخلية"
-                  >
-                    <Input />
-                  </FormItem>
-                </Col>
-                <Col xs={24} sm={24} md={8} lg={8}>
-                  <FormItem
-                    {...formItemLayout}
-                    label="اسم اللجنة"
-                  >
-                    <Input />
-                  </FormItem>
-                </Col>
-                <Col xs={24} sm={24} md={8} lg={8}>
-                  <FormItem
-                    {...formItemLayout}
-                    label="الفريق"
-                  >
-                    <Input />
-                  </FormItem>
-                </Col>
+              <div>
+                <p >العضويات الخارجية وفرق العمل</p>
+                <Row type="flex" gutter={16}>
+                  <Col xs={24} sm={24} md={8} lg={8}>
+                    <FormItem
+                      {...formItemLayout}
+                      label="اسم الجهة المنظمة"
+                    >
+                      <Input />
+                    </FormItem>
+                  </Col>
+                  <Col xs={24} sm={24} md={8} lg={8}>
+                    <FormItem
+                      {...formItemLayout}
+                      label="المجال"
+                    >
+                      <Input />
+                    </FormItem>
+                  </Col>
+                  <Col xs={24} sm={24} md={8} lg={8}>
+                    <FormItem
+                      {...formItemLayout}
+                      label="المسمى"
+                    >
+                      <Input />
+                    </FormItem>
+                  </Col>
+                  <Col xs={24} sm={24} md={8} lg={8}>
+                    <FormItem
+                      {...formItemLayout}
+                      label="البلد"
+                    >
+                      <Input />
+                    </FormItem>
+                  </Col>
+                  <Col xs={24} sm={24} md={8} lg={8}>
+                    <FormItem
+                      {...formItemLayout}
+                      label="من الفترة"
+                    >
+                      <DatePicker showTime format="YYYY-MM-DD" />
+                    </FormItem>
+                  </Col>
+                  <Col xs={24} sm={24} md={8} lg={8}>
+                    <FormItem
+                      {...formItemLayout}
+                      label="الى الفترة"
+                    >
+                      <DatePicker showTime format="YYYY-MM-DD" />
+                    </FormItem>
+                  </Col>
+                  <Col xs={24} sm={24} md={8} lg={8}>
+                    <FormItem
+                      {...formItemLayout}
+                      label="مرفقات"
+                    >
+                      <Upload>
+                        <Button>
+                          <Icon type="upload" />
+                        </Button>
+                      </Upload>
+                    </FormItem>
+                  </Col>
+                  <Col xs={24} sm={24} md={8} lg={8}>
+                    <FormItem
+                      {...formItemLayout}
+                      label="اللجان الداخلية"
+                    >
+                      <Input />
+                    </FormItem>
+                  </Col>
+                  <Col xs={24} sm={24} md={8} lg={8}>
+                    <FormItem
+                      {...formItemLayout}
+                      label="اسم اللجنة"
+                    >
+                      <Input />
+                    </FormItem>
+                  </Col>
+                  <Col xs={24} sm={24} md={8} lg={8}>
+                    <FormItem
+                      {...formItemLayout}
+                      label="الفريق"
+                    >
+                      <Input />
+                    </FormItem>
+                  </Col>
 
-              </Row>
+                </Row>
+              </div>
+              <br />
+              <div>
+                <p>اللجان الداخلية وفرق العمل</p>
+                <Row type="flex" gutter={16}>
+                  <Col xs={24} sm={24} md={8} lg={8}>
+                    <FormItem
+                      {...formItemLayout}
+                      label="اسم الجهة المنظمة"
+                    >
+                      <Input />
+                    </FormItem>
+                  </Col>
+                  <Col xs={24} sm={24} md={8} lg={8}>
+                    <FormItem
+                      {...formItemLayout}
+                      label="المجال"
+                    >
+                      <Input />
+                    </FormItem>
+                  </Col>
+                  <Col xs={24} sm={24} md={8} lg={8}>
+                    <FormItem
+                      {...formItemLayout}
+                      label="المسمى"
+                    >
+                      <Input />
+                    </FormItem>
+                  </Col>
+                  <Col xs={24} sm={24} md={8} lg={8}>
+                    <FormItem
+                      {...formItemLayout}
+                      label="البلد"
+                    >
+                      <Input />
+                    </FormItem>
+                  </Col>
+                  <Col xs={24} sm={24} md={8} lg={8}>
+                    <FormItem
+                      {...formItemLayout}
+                      label="اللجان الداخلية"
+                    >
+                      <Input />
+                    </FormItem>
+                  </Col>
+                  <Col xs={24} sm={24} md={8} lg={8}>
+                    <FormItem
+                      {...formItemLayout}
+                      label="اسم اللجنة"
+                    >
+                      <Input />
+                    </FormItem>
+                  </Col>
+                  <Col xs={24} sm={24} md={8} lg={8}>
+                    <FormItem
+                      {...formItemLayout}
+                      label="الفريق"
+                    >
+                      <Input />
+                    </FormItem>
+                  </Col>
+
+                </Row>
+              </div>
             </div>
             <div className="form-ctrls">
               <Button size="large" className="pink-btn" block>

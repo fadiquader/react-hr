@@ -84,6 +84,22 @@ class PersonalInfo extends React.Component {
                         <Input />
                       </FormItem>
                     </Col>
+                    <Col xs={24} sm={24} md={12} lg={12}>
+                      <FormItem
+                        {...formItemLayout}
+                        label="الديانة"
+                      >
+                        <Input />
+                      </FormItem>
+                    </Col>
+                    <Col xs={24} sm={24} md={12} lg={12}>
+                      <FormItem
+                        {...formItemLayout}
+                        label="العمر"
+                      >
+                        <Input />
+                      </FormItem>
+                    </Col>
                     <Col xs={24} sm={24} md={24} lg={24}>
                       <FormItem
                         {...formItemLayout}
@@ -129,6 +145,14 @@ class PersonalInfo extends React.Component {
                   <FormItem
                     {...formItemLayout}
                     label="الرقم المدني"
+                  >
+                    <Input />
+                  </FormItem>
+                </Col>
+                <Col xs={24} sm={24} md={8} lg={8}>
+                  <FormItem
+                    {...formItemLayout}
+                    label="مكان اصدار الرقم المدني"
                   >
                     <Input />
                   </FormItem>
@@ -227,7 +251,7 @@ class PersonalInfo extends React.Component {
                       xs: { span: 24 },
                       sm: { span: 20 },
                     }}
-                    label="العنوان"
+                    label="العنوان الدائم"
                   >
                     <Input />
                   </FormItem>
@@ -235,7 +259,22 @@ class PersonalInfo extends React.Component {
                 <Col xs={24} sm={24} md={8} lg={8}>
                   <FormItem
                     {...formItemLayout}
-                    label="شهادة المكان"
+                    label="شهادة الميلاد"
+                  >
+                    <Input />
+                  </FormItem>
+                </Col>
+                <Col xs={24} sm={24} md={16} lg={16}>
+                  <FormItem
+                    labelCol={{
+                      xs: {span: 24},
+                      sm: {span: 4},
+                    }}
+                    wrapperCol={{
+                      xs: { span: 24 },
+                      sm: { span: 20 },
+                    }}
+                    label="العنوان المؤقت"
                   >
                     <Input />
                   </FormItem>
@@ -264,7 +303,15 @@ class PersonalInfo extends React.Component {
                 <Col xs={24} sm={24} md={8} lg={8}>
                   <FormItem
                     {...formItemLayout}
-                    label="الملف الصحي"
+                    label="رقم الملف الصحي"
+                  >
+                    <Input />
+                  </FormItem>
+                </Col>
+                <Col xs={24} sm={24} md={8} lg={8}>
+                  <FormItem
+                    {...formItemLayout}
+                    label="اسم المركز الصحي"
                   >
                     <Input />
                   </FormItem>
@@ -331,14 +378,7 @@ class PersonalInfo extends React.Component {
                     <Input />
                   </FormItem>
                 </Col>
-                <Col xs={24} sm={24} md={8} lg={8}>
-                  <FormItem
-                    {...formItemLayout}
-                    label="الرقم المدني"
-                  >
-                    <Input />
-                  </FormItem>
-                </Col>
+
                 <Col xs={24} sm={24} md={8} lg={8}>
                   <FormItem
                     {...formItemLayout}
@@ -367,6 +407,14 @@ class PersonalInfo extends React.Component {
                   <FormItem
                     {...formItemLayout}
                     label="جهة العمل"
+                  >
+                    <Input />
+                  </FormItem>
+                </Col>
+                <Col xs={24} sm={24} md={8} lg={8}>
+                  <FormItem
+                    {...formItemLayout}
+                    label="القبيلة"
                   >
                     <Input />
                   </FormItem>
